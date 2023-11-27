@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <script src="script.js" defer></script>
+    <title>SSP game</title>
+  </head>
+  <body>
+    <div id="main-div">
+      <h1 class="visible" id="welcome-msg">ROCK, PAPER, SCISSORS</h1>
+      <p class="visible" id="instruction-msg">
+        Welcome!! Enter Your name please...
+      </p>
+      <form class="visible">
+        <input type="text" placeholder="name" id="nameInput" />
+        <button id="formBtn">Submit</button>
+      </form>
+      <div class="hidden" id="choices">
+        <button class="choiceBtn">ROCK</button>
+        <button class="choiceBtn">PAPER</button>
+        <button class="choiceBtn">SCISSORS</button>
+      </div>
+      <div class="hidden" id="game-div">
+        <div id="score-container">
+          <h1 id="playerText">Player:</h1>
+          <h1 id="resultText">Result:</h1>
+          <h1 id="aiText">AI:</h1>
+        </div>
+        <div class="hidden"  id="scoreboard">
+          <h1 id="player-score">Player:</h2>
+          <h1 id="ai-score">AI:</h2>
+        </div>
+      </div>
+      <div class="hidden" id="winner-div">
+        <h1 id="final-result"></h1>
+        <button id="resetBtn">Reset</button>
+      </div>
+    </div>
+  </body>
+</html>
